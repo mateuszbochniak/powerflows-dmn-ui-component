@@ -15,6 +15,7 @@
  */
 
 import {Expression} from './expression.model';
+import {EvaluationMode} from './evaluation.mode';
 
 export class Rule {
  description: string;
@@ -24,7 +25,9 @@ export class Rule {
 
 export class InputEntry {
   name: string;
+  nameAlias: string;
   expression: Expression;
+  evaluationMode: EvaluationMode;
 }
 
 export class OutputEntry {

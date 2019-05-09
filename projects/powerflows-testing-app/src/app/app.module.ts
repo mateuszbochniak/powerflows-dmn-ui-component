@@ -19,6 +19,7 @@ import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
 import {PowerflowsModule} from '../../../powerflows/src/lib/powerflows.module';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import {PowerflowsModule} from '../../../powerflows/src/lib/powerflows.module';
   ],
   imports: [
     BrowserModule,
-    PowerflowsModule
+    PowerflowsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

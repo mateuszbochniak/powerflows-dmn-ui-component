@@ -22,5 +22,8 @@ export class Expression {
 export enum ExpressionType {
   LITERAL = 'LITERAL',
   FEEL = 'FEEL',
-  GROOVY = 'GROOVY'
+  JUEL = 'JUEL',
+  GROOVY = 'GROOVY',
+  JAVASCRIPT = 'JAVASCRIPT',
+  MVEL = 'MVEL'
 }

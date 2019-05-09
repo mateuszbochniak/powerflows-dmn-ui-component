@@ -17,12 +17,14 @@
 import {Input, Output} from './field.model';
 import {ExpressionType} from './expression.model';
 import {Rule} from './rule.model';
+import {EvaluationMode} from './evaluation.mode';
 
 export class Decision {
   id: string;
   name: string;
   hitPolicy: HitPolicy;
   expressionType: ExpressionType;
+  evaluationMode: EvaluationMode;
   inputs: Array<Input>;
   outputs: Array<Output>;
   rules: Array<Rule>;
@@ -33,5 +35,7 @@ export enum HitPolicy {
   FIRST = 'FIRST',
   ANY = 'ANY',
   PRIORITY = 'PRIORITY',
-  COLLECT = 'COLLECT'
+  COLLECT = 'COLLECT',
+  RULE_ORDER = 'RULE_ORDER',
+  OUTPUT_ORDER = 'OUTPUT_ORDER'
 }
